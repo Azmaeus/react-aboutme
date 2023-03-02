@@ -6,6 +6,7 @@
   height: 40vmin;
   pointer-events: none;
   border-radius: 50%;
+  margin-bottom: 3rem;
 }
 
 .App-header {
@@ -17,6 +18,12 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.App-header h1,
+.App-header h3 {
+  margin: 0;
+  padding: 0.3rem;
 }
 
 .App-link {
