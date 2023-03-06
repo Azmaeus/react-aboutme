@@ -29,3 +29,10 @@
 .App-link {
   color: #61dafb;
 }
+
+.section {
+  margin: 0 auto;
+  min-height: 20vh;
+  max-width: 800px;
+  padding: 0 1rem;
+}
