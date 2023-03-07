@@ -1,5 +1,6 @@
 import logo from './headshot.jpg';
 import './App.css';
+import Resume from './components/Resume';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           Software Engineer
         </h3>
       </header>
+      <Resume />
     </div>
   );
 }
