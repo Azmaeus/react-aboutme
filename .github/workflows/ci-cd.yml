@@ -37,7 +37,7 @@ jobs:
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v3
       with:
-        token: ${{ CODECOV_TOKEN }}
+        token: ${{ secrets.CODECOV_TOKEN }}
     
     - name: Deploy with SSH and rsync
       uses: burnett01/rsync-deployments@5.2.1
@@ -45,7 +45,7 @@ jobs:
         switches: -vr
         path: build/
         remote_path: /var/www/ericolsen.us
-        remote_host: ${{ HOMESERVER_URL }}
-        remote_user: ${{ HOMESERVER_DEPLOY_USER }}
-        remote_key: ${{ HOMESERVER_DEPLOY_KEY }}
-        remote_key_pass: ${{ HOMESERVER_DEPLOY_PASS }}
+        remote_host: ${{ secrets.HOMESERVER_URL }}
+        remote_user: ${{ secrets.HOMESERVER_DEPLOY_USER }}
+        remote_key: ${{ secrets.HOMESERVER_DEPLOY_KEY }}
+        remote_key_pass: ${{ secrets.HOMESERVER_DEPLOY_PASS }}
