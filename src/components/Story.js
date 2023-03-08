@@ -1,8 +1,8 @@
 function Story() {
   return (
-    <div className="section">
+    <section id="story" class="section">
       <h2>my story goes here!</h2>
-    </div>
+    </section>
   );
 }
 
