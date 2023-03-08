@@ -21,9 +21,13 @@
 }
 
 .App-header h1,
-.App-header h3 {
+.App-header-occupation {
   margin: 0;
   padding: 0.3rem;
+}
+
+.App-header-occupation {
+  font-size: 2.5rem;
 }
 
 .App-link {
