@@ -1,8 +1,6 @@
 name: CI/CD
 
-on:
-  push:
-    branches: ["master"]
+on: pull_request
 
 jobs:
   build:
@@ -25,8 +23,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build
-        run: npm run build --if-present
+      - name: Check eslint
+        run: npm run lint
 
       - name: Run tests and generate coverage report
         run: npm test -- --coverage
@@ -35,14 +33,3 @@ jobs:
         uses: codecov/codecov-action@v3
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-
-      - name: Deploy with SSH and rsync
-        uses: burnett01/rsync-deployments@5.2.1
-        with:
-          switches: -vr
-          path: build/
-          remote_path: /var/www/ericolsen.us
-          remote_host: ${{ secrets.HOMESERVER_URL }}
-          remote_user: ${{ secrets.HOMESERVER_DEPLOY_USER }}
-          remote_key: ${{ secrets.HOMESERVER_DEPLOY_KEY }}
-          remote_key_pass: ${{ secrets.HOMESERVER_DEPLOY_PASS }}
