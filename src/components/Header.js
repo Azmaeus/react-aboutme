@@ -1,4 +1,5 @@
 import profile_photo from '../profile-photo.jpg';
+import './Header.css';
 
 function Header () {
   return (

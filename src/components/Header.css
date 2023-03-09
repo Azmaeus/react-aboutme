@@ -1,0 +1,25 @@
+.App-profile-photo {
+  height: 40vmin;
+  pointer-events: none;
+  border-radius: 50%;
+  margin-bottom: 3rem;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.App-header h1,
+.App-header-occupation {
+  margin: 0;
+  padding: 0.3rem;
+}
+
+.App-header-occupation {
+  font-size: 2.5rem;
+}
