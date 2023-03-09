@@ -1,4 +1,4 @@
-name: CI/CD
+name: Pull Request Test
 
 on: pull_request
 
