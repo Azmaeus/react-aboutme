@@ -1,11 +1,12 @@
-import profile_photo from '../profile-photo.jpg';
+import './Header.css';
+import profile_photo from '../profile-photo.webp';
 
 function Header () {
   return (
     <header className="App-header">
       <img src={profile_photo} className="App-profile-photo" alt="profile" />
         <h1>Eric F. Olsen</h1>
-        <p class="App-header-occupation">Software Engineer</p>
+        <p className="App-header-occupation">Software Engineer</p>
       </header>
   );
 }
