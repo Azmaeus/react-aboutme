@@ -1,3 +1,5 @@
+import './Story.css';
+
 function Story() {
   return (
     <section id="story" class="section">
