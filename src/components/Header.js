@@ -1,5 +1,5 @@
-import profile_photo from '../profile-photo.jpg';
 import './Header.css';
+import profile_photo from '../profile-photo.webp';
 
 function Header () {
   return (
